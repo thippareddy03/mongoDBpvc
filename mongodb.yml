@@ -29,7 +29,7 @@ spec:
           memory: 1G
       volumeMounts:
         - name: mongovol
-          mountpath: /data/db
+          mountPath: /data/db
   volumes:
     - name: mongovol
       persistentVolumeClaim:
