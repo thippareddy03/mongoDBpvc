@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaimVolumeSource
+metadata:
+  name: mongodbpvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
