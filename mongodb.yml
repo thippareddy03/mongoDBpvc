@@ -21,6 +21,12 @@ spec:
         - name: ME_CONFIG_MONGODB_URL
           value: mongodb://root:example@mongo:27017/
       resources:
+        requests:
+          cpu: 200m
+          memory: 512M
+        limits:
+          cpu: 400m
+          memory: 1G
       volumeMounts:
         - name: mongovol
           mountpath: /data/db
